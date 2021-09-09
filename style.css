@@ -148,6 +148,10 @@ header {
   height: 48px;
 }
 
+.social-icon:hover > img {
+  transform: scale(1.1);
+}
+
 .social-icon:not(:first-child) {
   margin-left: 25px;
 }
@@ -216,4 +220,35 @@ header {
   margin: 0 auto;
 }
 
+.advantages__item.w-margin {
+  margin-bottom: 0;
+}
+
 /* Advantages section  */
+
+/* Production section */
+
+.production__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.production__item_right {
+  flex-direction: row-reverse;
+}
+
+.production__item img {
+  width: 40%;
+  height: 300px;
+}
+
+.production__item p {
+  width: 50%;
+}
+
+.production__item:not(:last-child) {
+  margin-bottom: 72px;
+}
+
+/* Production section */
