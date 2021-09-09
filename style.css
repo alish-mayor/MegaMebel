@@ -228,6 +228,10 @@ header {
 
 /* Production section */
 
+.production {
+  background-color: var(--section-background);
+}
+
 .production__item {
   display: flex;
   align-items: center;
@@ -252,3 +256,44 @@ header {
 }
 
 /* Production section */
+
+/* Gallery section */
+
+.gallery-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.gallery-content img {
+  width: 85%;
+}
+
+.arrow-btn {
+  background-color: var(--primary);
+  color: #ffffff;
+  font-size: 36px;
+  border: none;
+  border-radius: 100%;
+  width: 64px;
+  height: 64px;
+}
+
+.dots {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 300px;
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  background-color: #c4c4c4;
+  border-radius: 100%;
+}
+
+.dot_active {
+  background-color: var(--title-color);
+}
+/* Gallery section */
