@@ -297,3 +297,39 @@ header {
   background-color: var(--title-color);
 }
 /* Gallery section */
+
+/* How it work section */
+
+.how-it-work {
+  background-color: var(--section-background);
+}
+
+.how-it-work__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 99px 153px;
+}
+
+.how-it-work__item {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.how-it-work__item img {
+  width: 128px;
+  height: 128px;
+}
+
+.how-it-work__text {
+  width: 70%;
+}
+
+.sub-title_green {
+  color: var(--primary);
+  font-weight: 500;
+}
+
+/* How it work section */
