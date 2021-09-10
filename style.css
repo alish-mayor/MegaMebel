@@ -92,10 +92,6 @@ h2 {
 
 /* Header */
 
-header {
-  background: linear-gradient(280.88deg, var(--primary), #ffffff);
-}
-
 .header__top {
   display: flex;
   justify-content: space-between;
@@ -232,10 +228,6 @@ header {
 
 /* Production section */
 
-.production {
-  background-color: var(--section-background);
-}
-
 .production__item {
   display: flex;
   align-items: center;
@@ -282,6 +274,11 @@ header {
   border-radius: 100%;
   width: 64px;
   height: 64px;
+  cursor: pointer;
+}
+
+.arrow-btn:hover {
+  transform: scale(1.1);
 }
 
 .dots {
@@ -303,10 +300,6 @@ header {
 /* Gallery section */
 
 /* How it work section */
-
-.how-it-work {
-  background-color: var(--section-background);
-}
 
 .how-it-work__content {
   display: grid;
@@ -339,11 +332,8 @@ header {
 /* How it work section */
 
 /* Form section  */
-.form {
-  background-color: var(--primary);
-}
 
-.form h2 {
+#form h2 {
   color: #ffffff;
 }
 
@@ -384,3 +374,93 @@ header {
 }
 
 /* Form section  */
+
+/* Contacts */
+
+.contacts-container {
+  display: flex;
+  justify-content: space-between;
+  height: 600px;
+  align-items: center;
+  overflow: hidden;
+  padding: 0px 10px;
+}
+
+.contacts-box {
+  background-color: #ffffff;
+  border-radius: 10px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 50px;
+}
+
+.contacts-box .title {
+  text-align: center;
+}
+
+.contacts-box .socials {
+  margin: 0 auto;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+}
+
+.contact-item .sub-title {
+  margin-left: 20px;
+}
+
+.contacts-images {
+  width: 55%;
+}
+
+.contacts-images img {
+  margin-top: -10px;
+  width: 100%;
+  height: 400px;
+}
+
+/* Contacts */
+
+.footer {
+  padding: 20px 10px;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rights-text {
+  font-size: 24px;
+  font-weight: 300;
+  color: var(--title-color);
+}
+
+/* Sections background colors */
+
+#main {
+  background: linear-gradient(280.88deg, var(--primary), #ffffff);
+}
+
+#production {
+  background-color: var(--section-background);
+}
+
+#how-it-work {
+  background-color: var(--section-background);
+}
+
+#form {
+  background-color: var(--primary);
+}
+
+#contacts {
+  background-color: var(--section-background);
+}
+
+/* Sections background colors */
