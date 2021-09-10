@@ -84,6 +84,10 @@ h2 {
   width: 300px;
 }
 
+.btn:hover {
+  filter: brightness(0.9);
+}
+
 /* General */
 
 /* Header */
@@ -333,3 +337,50 @@ header {
 }
 
 /* How it work section */
+
+/* Form section  */
+.form {
+  background-color: var(--primary);
+}
+
+.form h2 {
+  color: #ffffff;
+}
+
+.form__container {
+  display: flex;
+  min-width: 70%;
+  margin: 0 auto;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 70px 100px 20px 100px;
+  border-radius: 20px;
+}
+
+.form__container label {
+  display: block;
+  text-align: left;
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.form__container input {
+  padding: 15px 20px;
+  border-radius: 10px;
+  border: 2px solid var(--primary);
+  font-size: 36px;
+  margin-bottom: 65px;
+  font-weight: 300;
+}
+
+.form__container .btn {
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.form__container .sub-title {
+  text-align: center;
+}
+
+/* Form section  */
