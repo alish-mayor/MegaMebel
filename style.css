@@ -88,8 +88,11 @@ h2 {
   filter: brightness(0.9);
 }
 
+/* General */
+
+/* Burger menu */
+
 .burger-menu {
-  display: none;
   position: fixed;
   top: 0;
   right: 0;
@@ -97,6 +100,9 @@ h2 {
   background-color: #ffffff;
   padding: 2rem;
   text-align: center;
+  z-index: 100;
+  transition: transform 300ms;
+  transform: translateX(100%);
 }
 
 .burger-menu a {
@@ -105,6 +111,16 @@ h2 {
   text-decoration: none;
   color: var(--title-color);
   margin-bottom: 2rem;
+}
+
+.burger-menu a:first-child {
+  margin-top: 2rem;
+}
+
+.close-menu-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
 }
 
 .menu-btn {
@@ -118,7 +134,7 @@ h2 {
   width: 40px;
 }
 
-/* General */
+/* Burger menu */
 
 /* Header */
 
@@ -863,5 +879,19 @@ h2 {
   }
 
   /* Footer */
+
+  .burger-menu {
+    padding: 1.5rem;
+  }
+
+  .burger-menu a {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .menu-btn img {
+    width: 30px;
+    height: 30px;
+  }
 }
 /* Media queries */
