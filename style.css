@@ -88,6 +88,36 @@ h2 {
   filter: brightness(0.9);
 }
 
+.burger-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  background-color: #ffffff;
+  padding: 2rem;
+  text-align: center;
+}
+
+.burger-menu a {
+  display: block;
+  font-size: 2rem;
+  text-decoration: none;
+  color: var(--title-color);
+  margin-bottom: 2rem;
+}
+
+.menu-btn {
+  display: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-btn img {
+  width: 40px;
+}
+
 /* General */
 
 /* Header */
@@ -467,6 +497,9 @@ h2 {
 
 /* Media queries */
 @media (max-width: 1100px) {
+  .menu-btn {
+    display: block;
+  }
   /* Header */
 
   .wrapper {
