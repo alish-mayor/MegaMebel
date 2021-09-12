@@ -101,7 +101,7 @@ h2 {
   padding: 2rem;
   text-align: center;
   z-index: 100;
-  transition: transform 300ms;
+  transition: transform 300ms ease-in-out;
   transform: translateX(100%);
 }
 
@@ -111,10 +111,15 @@ h2 {
   text-decoration: none;
   color: var(--title-color);
   margin-bottom: 2rem;
+  transition: color 200ms ease-in-out;
 }
 
 .burger-menu a:first-child {
   margin-top: 2rem;
+}
+
+.burger-menu a:hover {
+  color: var(--primary);
 }
 
 .close-menu-btn {
