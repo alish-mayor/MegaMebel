@@ -209,11 +209,11 @@
                 <div class="content">
                     <h2>Уже решили? <br>
                         Отправьте нам заявку</h2>
-                        <form class="form__container">
+                        <form class="form__container" action="telegram.php" method="POST">
                             <label for="name-input">Ваше имя</label>
-                            <input type="text" class="input-name" placeholder="Иванов Иван...">
+                            <input type="text" class="input-name" name="user_name" placeholder="Иванов Иван..." required="true">
                             <label for="phone-input">Телефон</label>
-                            <input type="text" class="input-phone" placeholder="+7">
+                            <input type="text" class="input-phone" name="user_phone" placeholder="+7" required="true">
                             <button class="btn">Отправить заявку</button>
                             <p class="sub-title">* заявки принимаются только в городе Нур-Султан</p>
                         </form>

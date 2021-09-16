@@ -59,12 +59,6 @@ btn.addEventListener("click", (e) => {
   document.querySelector("#form").scrollIntoView({ behavior: "smooth" });
 });
 
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
-  console.log(document.querySelector(".input-name").value);
-  console.log(document.querySelector(".input-phone").value);
-});
-
 leftArrow.addEventListener("click", function () {
   if (curIndex === 0) {
     curIndex = images.length - 1;
