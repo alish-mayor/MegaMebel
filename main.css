@@ -423,11 +423,6 @@ h2 {
 .form__container .sub-title {
   text-align: center;
 }
-
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-}
 /* Form section  */
 
 /* Contacts */

@@ -3,11 +3,12 @@ const closeMenuBtn = document.querySelector(".close-menu-btn");
 const burgerMenu = document.querySelector(".burger-menu");
 const menuLinks = document.querySelectorAll(".menu-links");
 const btn = document.querySelector(".btn");
-const form = document.querySelector(".form__container");
 const leftArrow = document.querySelector(".left-arrow");
 const rightArrow = document.querySelector(".right-arrow");
 const galleryImg = document.querySelector(".gallery-img");
 const dots = document.querySelectorAll(".dot");
+const inputPhone = document.querySelector(".input-phone");
+
 const images = [
   "6.jpg",
   "12.jpg",
@@ -19,6 +20,12 @@ const images = [
   "kuhonnaya-mebel.jpg",
 ];
 let curIndex = 0;
+
+// Functions
+const addPhoneMask = function () {
+  const im = new Inputmask("+7 (999) 999 99 99");
+  im.mask(inputPhone);
+};
 
 const openMenu = function () {
   burgerMenu.style.transform = "translateX(0)";
@@ -35,8 +42,8 @@ const renderImageAndChangeDot = function (index) {
   });
   dots[index].classList.add("dot_active");
 };
-// Event listeners
 
+// Event listeners
 openMenuBtn.addEventListener("click", openMenu);
 
 closeMenuBtn.addEventListener("click", closeMenu);
@@ -79,6 +86,7 @@ rightArrow.addEventListener("click", function () {
   renderImageAndChangeDot(curIndex);
 });
 
-document.addEventListener("DOMContentLoaded", () =>
-  galleryImg.setAttribute("src", `assets/images/${images[curIndex]}`)
-);
+document.addEventListener("DOMContentLoaded", () => {
+  galleryImg.setAttribute("src", `assets/images/${images[curIndex]}`);
+  addPhoneMask();
+});

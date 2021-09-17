@@ -8,8 +8,8 @@ $phone = $_POST['user_phone'];
 $token = "1901781277:AAGIL97xOqmPYRTcajT6z79XhPEOCW5KEP8";
 $chat_id = "-505008889";
 $arr = array(
-  'Имя пользователя: ' => $name,
-  'Телефон: ' => $phone,
+  'Имя: ' => $name,
+  'Тел: ' => $phone,
 );
 
 foreach($arr as $key => $value) {
