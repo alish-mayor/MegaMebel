@@ -209,7 +209,7 @@ h2 {
 
 .offer__images {
   width: 783px;
-  height: 623px;
+  height: 550px;
   position: relative;
 }
 
@@ -222,7 +222,7 @@ h2 {
   bottom: 0;
   right: 0;
   width: 550px;
-  height: 450px;
+  height: 400px;
   z-index: 3;
 }
 
@@ -315,6 +315,8 @@ h2 {
 
 .gallery-content img {
   width: 85%;
+  height: 800px;
+  object-fit: contain;
 }
 
 .arrow-btn {
@@ -644,6 +646,10 @@ h2 {
   .dots {
     padding: 0 175px;
   }
+
+  .gallery-content img {
+    height: 500px;
+  }
   /* Gallery */
 
   /* How it work */
@@ -764,7 +770,7 @@ h2 {
   .btn {
     margin: 0 auto;
     padding: 15px 34px;
-    width: 90%;
+    width: 85%;
     font-size: 18px;
   }
   /* Header */
@@ -819,6 +825,7 @@ h2 {
     order: 1;
     width: 100%;
     margin-bottom: 10px;
+    height: 250px;
   }
 
   .gallery-content .arrow-btn {

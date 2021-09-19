@@ -10,14 +10,16 @@ const dots = document.querySelectorAll(".dot");
 const inputPhone = document.querySelector(".input-phone");
 
 const images = [
-  "6.jpg",
-  "12.jpg",
-  "30-1.jpg",
-  "79b757f9c3e40ebe2acb0b3ceb1c885aa515e4fa_optimizm.jpg",
-  "15737.750@2x.jpg",
-  "dsv-stenka-ronda-3_enl.jpg",
-  "Mebel.jpg",
-  "kuhonnaya-mebel.jpg",
+  "1.png",
+  "2.png",
+  "3.png",
+  "4.png",
+  "5.png",
+  "6.png",
+  "7.png",
+  "8.png",
+  "9.png",
+  "10.png",
 ];
 let curIndex = 0;
 
@@ -36,7 +38,7 @@ const closeMenu = function () {
 };
 
 const renderImageAndChangeDot = function (index) {
-  galleryImg.setAttribute("src", `assets/images/${images[index]}`);
+  galleryImg.setAttribute("src", `assets/images/gallery/${images[index]}`);
   dots.forEach((dot) => {
     dot.classList.remove("dot_active");
   });
@@ -87,6 +89,6 @@ rightArrow.addEventListener("click", function () {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  galleryImg.setAttribute("src", `assets/images/${images[curIndex]}`);
+  galleryImg.setAttribute("src", `assets/images/gallery/${images[curIndex]}`);
   addPhoneMask();
 });
