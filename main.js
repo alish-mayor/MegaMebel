@@ -8,7 +8,7 @@ const rightArrow = document.querySelector(".right-arrow");
 const galleryImg = document.querySelector(".gallery-img");
 const dots = document.querySelectorAll(".dot");
 const inputPhone = document.querySelector(".input-phone");
-
+const root = document.querySelector(":root");
 const images = [
   "1.png",
   "2.png",
@@ -38,6 +38,7 @@ const closeMenu = function () {
 };
 
 const renderImageAndChangeDot = function (index) {
+  galleryImg.setAttribute("src", "");
   galleryImg.setAttribute("src", `assets/images/gallery/${images[index]}`);
   dots.forEach((dot) => {
     dot.classList.remove("dot_active");

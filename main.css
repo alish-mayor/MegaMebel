@@ -330,10 +330,6 @@ h2 {
   cursor: pointer;
 }
 
-.arrow-btn:hover {
-  transform: scale(1.1);
-}
-
 .dots {
   display: flex;
   justify-content: space-between;
@@ -818,18 +814,20 @@ h2 {
   /* Gallery */
   .gallery-content {
     flex-wrap: wrap;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
   }
 
   .gallery-content img {
     order: 1;
     width: 100%;
-    margin-bottom: 10px;
-    height: 250px;
+    height: 350px;
   }
 
   .gallery-content .arrow-btn {
     order: 2;
+    margin: 0 1rem;
+    margin-top: 1rem;
   }
 
   .dots {
